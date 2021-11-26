@@ -18,15 +18,15 @@ export const ShoppingPage = () => {
           <ProductCard title={product.title} />
           <ProductCard counter={0} increaseBy={() => {}} />
         </ProductCard> */}
-        <ProductCard product={product} className="bg-dark">
+        <ProductCard product={product} className="bg-dark text-white">
           <ProductImage className="custom-image" />
-          <ProductTitle className="text-white text-bold" />
-          <ProductButtons />
+          <ProductTitle className="text-bold" />
+          <ProductButtons className="custom-buttons" />
         </ProductCard>
-        <ProductCard product={product}>
-          <ProductCard.Image />
-          <ProductCard.Title />
-          <ProductCard.Buttons />
+        <ProductCard product={product} className="bg-dark text-white">
+          <ProductCard.Image className="custom-image" />
+          <ProductCard.Title className="text-bold" />
+          <ProductCard.Buttons className="custom-buttons" />
         </ProductCard>
       </div>
     </div>
