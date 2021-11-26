@@ -1,6 +1,6 @@
 import ProductCard from '../components';
 import { ProductImage, ProductTitle, ProductButtons } from '../components';
-
+import '../styles/custom-styles.css';
 const product = {
   id: '1',
   title: 'Coffee Mug - Card',
@@ -18,7 +18,7 @@ export const ShoppingPage = () => {
           <ProductCard title={product.title} />
           <ProductCard counter={0} increaseBy={() => {}} />
         </ProductCard> */}
-        <ProductCard product={product}>
+        <ProductCard product={product} className="bg-dark">
           <ProductImage />
           <ProductTitle title={'Prueba'} />
           <ProductButtons />
