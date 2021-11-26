@@ -19,8 +19,8 @@ export const ShoppingPage = () => {
           <ProductCard counter={0} increaseBy={() => {}} />
         </ProductCard> */}
         <ProductCard product={product} className="bg-dark">
-          <ProductImage />
-          <ProductTitle title={'Prueba'} />
+          <ProductImage className="custom-image" />
+          <ProductTitle className="text-white text-bold" />
           <ProductButtons />
         </ProductCard>
         <ProductCard product={product}>
